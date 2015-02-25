@@ -13,6 +13,11 @@ Get inside the folder where you cloned this repo and move on with `lein figwheel
 
 Access app on [http://localhost:3449](http://localhost:3449)
 
+## Getting help:
+
+[Reagent](http://holmsand.github.io/reagent/)
+[Clojurescript](http://himera.herokuapp.com/synonym.html)
+
 ## License
 
 Copyright © 2014 Rafael Oliveira
