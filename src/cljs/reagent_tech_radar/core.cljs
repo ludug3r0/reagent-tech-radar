@@ -4,5 +4,7 @@
               [reagent-tech-radar.sandbox :as sandbox])
     (:import goog.History))
 
+
+
 (defn init! []
-  (reagent/render-component [todo/todo-app] (.getElementById js/document "app")))
+  (reagent/render-component [sandbox/foo] (.getElementById js/document "app")))

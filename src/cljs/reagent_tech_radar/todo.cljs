@@ -24,6 +24,31 @@
                 (add-todo "Allow any arguments to component functions")
                 (complete-all true)))
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 (defn todo-input [{:keys [title on-save on-stop]}]
   (let [val (atom title)
         stop #(do (reset! val "")
@@ -77,6 +102,7 @@
   (let [filt (atom :all)]
     (fn []
       (let [items (vals @todos)
+            done (count (filter :done items))
             done (->> items (filter :done) count)
             active (- (count items) done)]
         [:div
